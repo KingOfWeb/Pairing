@@ -4,6 +4,10 @@ describe Poker do
 
   describe ".winning_hand" do
 
+    it "responds to #winning_hand" do
+      Poker.should respond_to(:winning_hand)
+    end
+
     context "input validation" do
       it "raises an error when hand1 contains less than 5 cards" do
         hand1 = [4, 2, 6, 8]
